@@ -1,0 +1,49 @@
+:root {
+
+    --primay-color: #e7e7e7;
+    --secondary-color: #1c1c1c;
+    --acent-color: #2788b4;
+
+}
+
+:root.darkMode {
+
+    --primay-color: #1c1c1c;
+    --secondary-color: #cacaca;
+    --acent-color: #2788b4;
+
+}
+
+body {
+
+    background-color: var(--primay-color);
+    color: var(--secondary-color);
+    padding: 0;
+    margin: 0;
+    display: block;
+
+}
+
+menu {
+
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 60vw;
+    background-color: var(--secondary-color);
+
+}
+
+label {
+
+    display: block;
+}
+
+.svgIcon {
+
+    color: var(--acent-color);
+
+}
