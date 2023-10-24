@@ -1,26 +1,36 @@
 :root {
 
-    --primay-color: #e7e7e7;
+    --primary-color: #f8f8f8;
     --secondary-color: #1c1c1c;
-    --acent-color: #2788b4;
+    --acent-color: #30b9f7;
 
 }
 
 :root.darkMode {
 
-    --primay-color: #1c1c1c;
-    --secondary-color: #cacaca;
-    --acent-color: #2788b4;
+    --primary-color: #1c1c1c;
+    --secondary-color: #f8f8f8;
+    --acent-color: #0058ca;
 
+}
+
+* {
+
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
 
-    background-color: var(--primay-color);
-    color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     padding: 0;
     margin: 0;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -32,10 +42,196 @@ menu {
     align-items: center;
     padding: 0;
     margin: 0;
-    width: 60vw;
+    width: 50vw;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    gap: 1rem;
+
+}
+
+menu>button>svg {
+
+    width: 30px;
+    height: 30px;
+
+}
+
+menu>button,
+menu>li>a {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 10rem;
+    border-radius: 8px;
+    border: 2px solid var(--acent-color);
+    padding: 0.75rem 1.25rem;
+    color: var(--acent-color);
+    font-size: 14px;
+    background-color: transparent;
+    transition: .2s ease-in-out background-color, .2s ease-in-out color;
+    cursor: pointer;
+
+}
+
+menu>button {
+
+    width: 4rem;
+    padding: 0.25rem 0.75rem;
+
+}
+
+menu>li>a:hover {
+
+    background-color: var(--acent-color);
+    color: var(--secondary-color);
+
+}
+
+menu>button:hover {
+
+    background-color: var(--acent-color);
+    color: var(--secondary-color);
+
+}
+
+menu>button:active {
+
+    scale: 1.1;
+
+}
+
+menu li {
+
+    list-style: none;
+
+}
+
+menu a {
+
+    color: var(--acent-color);
+
+}
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
+}
+
+header {
+
+    margin-bottom: 2rem;
+    color: var(--acent-color);
+
+}
+
+
+section {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+
+}
+
+form {
+
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+
+}
+
+textarea {
+
+    width: 200px;
+    resize: vertical;
+    min-height: 20px;
+    max-height: 50px;
+
+}
+
+input,
+select {
+
+    margin-left: 2rem;
+
+}
+
+.firstLook {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw;
+    height: 650px;
+
+}
+
+
+.firstLook h1,
+h2 {
+
+    text-align: start;
+    justify-content: left;
+    line-height: 5px;
+}
+
+.firstLook h1 {
+
+    font-size: 3rem;
+    color: var(--primary-color);
+
+}
+
+.firstLook img {
+
+    width: 25vw;
+    height: 25vw;
+    max-width: 275px;
+    max-height: 275px;
+    min-width: 150px;
+    min-height: 150px;
+    border-radius: 100%;
+    border: 1px transparent solid;
+
+}
+
+section {
+
     background-color: var(--secondary-color);
 
 }
+
+h3 {
+
+    font-size: 2rem;
+
+}
+
+section article {
+
+    margin-top: 3rem;
+
+}
+
+#contact>header {
+
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 2vw;
+
+}
+
 
 label {
 
@@ -45,5 +241,96 @@ label {
 .svgIcon {
 
     color: var(--acent-color);
+    transition: scale ease-in-out .3s, rotate ease-in-out .3s;
+    width: 30px;
+    height: 30px;
+    padding: 0.5rem;
+
+}
+
+.svgIcon:hover {
+
+    color: var(--primary-color);
+    scale: 1.5;
+    rotate: 10deg;
+
+}
+
+.svgCard {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    width: 8.5vw;
+    height: 8.5vw;
+    border-radius: 5%;
+    transition: background-color ease-in-out .3s, color ease-in-out .3s, fill ease-in-out .3s;
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+.svgCard>svg {
+
+    width: 3rem;
+    height: 3rem;
+
+}
+
+
+#html:hover {
+
+    background-color: #E44D26;
+    color: #f8f8f8;
+
+}
+
+#css:hover {
+
+    background-color: #2299F8;
+    color: #f8f8f8;
+
+}
+
+#js:hover {
+
+    background-color: #FFDD25;
+    color: #33332B;
+
+}
+
+#java:hover {
+
+    background-color: #EB2024;
+    color: #f8f8f8;
+    fill: #f8f8f8;
+
+}
+
+ul {
+
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10vw;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+}
+
+ul>li {
+
+    display: flex;
+
+}
+
+a {
+
+    text-decoration: none;
 
 }
