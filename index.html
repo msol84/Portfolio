@@ -23,7 +23,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="icon" href="/imgs/logo (2).png" type="image/png">
-    <script src="main.js"></script>
 </head>
 
 <body>
@@ -66,7 +65,7 @@
     <main>
 
         <section>
-            <header class="firstLook">
+            <header id="firstLook">
 
                 <div>
                     <h1>Conoce a Gaspar Kral</h1>
@@ -102,7 +101,57 @@
                 <h3 id="projects">Proyectos</h3>
             </header>
 
-            <article>
+            <article id="slider">
+
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="arrow"
+                        class="icon icon-tabler icon-tabler-arrow-big-right-lines" width="24" height="24"
+                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                            d="M12 9v-3.586a1 1 0 0 1 1.707 -.707l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1 -1.707 -.707v-3.586h-3v-6h3z">
+                        </path>
+                        <path d="M3 9v6"></path>
+                        <path d="M6 9v6"></path>
+                    </svg>
+                </button>
+
+                <ul>
+                    <li>
+                        <a href="" class="projectCards">
+                            <img src="/imgs/logo.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="projectCards"></a>
+                    </li>
+                    <li>
+                        <a href="" class="projectCards"></a>
+                    </li>
+                    <li>
+                        <a href="" class="projectCards"></a>
+                    </li>
+                    <li>
+                        <a href="" class="projectCards"></a>
+                    </li>
+                    <li>
+                        <a href="" class="projectCards"></a>
+                    </li>
+                </ul>
+
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-right-lines"
+                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                            d="M12 9v-3.586a1 1 0 0 1 1.707 -.707l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1 -1.707 -.707v-3.586h-3v-6h3z">
+                        </path>
+                        <path d="M3 9v6"></path>
+                        <path d="M6 9v6"></path>
+                    </svg>
+                </button>
 
             </article>
         </section>
@@ -217,11 +266,9 @@
                     <label for="name">Nombre:</label>
                     <input type="text" name="name" id="name" placeholder="Ingresa tu nombre aquí"
                         autocomplete="additional-name">
-                    <br>
                     <label for="email">E-mail:</label>
                     <input type="email" name="email" id="email" placeholder="Ingresa tu e-mail aqui"
                         autocomplete="address-level1" required>
-                    <br>
                     <label for="reason">Razón:</label>
                     <select name="reason" id="reason" required>
                         <option value="1"></option>
@@ -229,16 +276,14 @@
                         <option value="3">Dudas</option>
                         <option value="4">Más Información</option>
                     </select>
-                    <br>
-                    <label>Mensaje:
-                        <textarea name="message" cols="20" rows="1" placeholder="Ingresa tu mensaje aquí"></textarea>
-                    </label>
-                    <br>
-                    <input type="submit" value="Mandame un mensaje">
+                    <label>Cuentame:</label>
+                    <textarea name="message" cols="20" rows="1" placeholder="Ingresa tu mensaje aquí"></textarea>
+
+                    <input id="submit" type="submit" value="Mandame un mensaje">
                 </fieldset>
             </form>
         </section>
 
     </main>
-
+    <script src="main.js"></script>
 </body>

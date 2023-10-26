@@ -31,6 +31,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
+    transition: .4s ease-in-out background-color;
 
 }
 
@@ -46,6 +47,7 @@ menu {
     background-color: var(--secondary-color);
     padding: 1rem;
     gap: 1rem;
+    transition: .4s ease-in-out background-color;
 
 }
 
@@ -56,8 +58,8 @@ menu>button>svg {
 
 }
 
-menu>button,
-menu>li>a {
+menu button,
+menu a {
 
     display: flex;
     justify-content: center;
@@ -119,6 +121,7 @@ main {
     display: flex;
     flex-direction: column;
     padding: 2rem;
+    background-color: transparent;
 
 }
 
@@ -137,63 +140,38 @@ section {
     justify-content: center;
     align-items: center;
     min-height: 500px;
+    transition: .4s ease-in-out background-color;
 
 }
 
-form {
-
-    color: var(--primary-color);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: end;
-
-}
-
-textarea {
-
-    width: 200px;
-    resize: vertical;
-    min-height: 20px;
-    max-height: 50px;
-
-}
-
-input,
-select {
-
-    margin-left: 2rem;
-
-}
-
-.firstLook {
+#firstLook {
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    gap: 2vw;
-    height: 650px;
+    height: 600px;
 
 }
 
 
-.firstLook h1,
+#firstLook h1,
 h2 {
 
     text-align: start;
     justify-content: left;
     line-height: 5px;
+    transition: .4s ease-in-out color;
 }
 
-.firstLook h1 {
+#firstLook h1 {
 
     font-size: 3rem;
     color: var(--primary-color);
+    margin-right: 2rem;
 
 }
 
-.firstLook img {
+#firstLook img {
 
     width: 25vw;
     height: 25vw;
@@ -203,6 +181,7 @@ h2 {
     min-height: 150px;
     border-radius: 100%;
     border: 1px transparent solid;
+    margin: 0;
 
 }
 
@@ -215,6 +194,7 @@ section {
 h3 {
 
     font-size: 2rem;
+    transition: .4s ease-in-out color;
 
 }
 
@@ -280,6 +260,90 @@ label {
 
 }
 
+#slider {
+
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80vw;
+    overflow: hidden;
+
+}
+
+
+#slider button {
+
+    background-color: transparent;
+    border: 1px solid var(--acent-color);
+    color: var(--primary-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color ease-in-out .3s, color ease-in-out .3s;
+    margin: 10px;
+    position: relative;
+
+
+}
+
+#slider button:hover {
+
+    background-color: var(--acent-color);
+    color: var(--secondary-color);
+
+}
+
+#slider button>svg {
+
+    padding: 3px;
+
+}
+
+#slider>ul {
+
+    margin: 1rem 0;
+    gap: 3vw;
+}
+
+#slider a:hover>img {
+
+    opacity: 1;
+
+}
+
+.projectCards {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 35vw;
+    min-width: 355px;
+    height: 300px;
+    border: 3px solid var(--primary-color);
+    border-radius: 12px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.projectCards>img {
+
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+    border-radius: 9px 0 0 9px;
+    transition: opacity ease .3s;
+}
+
+#arrow {
+
+    rotate: 180deg;
+
+}
 
 #html:hover {
 
@@ -310,6 +374,41 @@ label {
 
 }
 
+fieldset {
+
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    gap: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    width: 50vw;
+
+}
+
+form {
+
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+
+}
+
+input,
+select {
+
+    display: block;
+    margin-left: 2rem;
+
+}
+
+textarea {
+
+    resize: vertical;
+
+}
+
 ul {
 
     list-style: none;
@@ -322,6 +421,8 @@ ul {
     margin: 0;
 
 }
+
+#submit {}
 
 ul>li {
 
