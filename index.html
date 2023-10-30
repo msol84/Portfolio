@@ -30,13 +30,13 @@
     <nav>
         <menu>
 
-            <li><a href="#aboutMy">Sobre mi</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#habilities">Mis habilidades</a></li>
-            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#aboutMy" class="menuItems">Sobre mi</a></li>
+            <li><a href="#projects" class="menuItems">Proyectos</a></li>
+            <li><a href="#habilities" class="menuItems">Mis habilidades</a></li>
+            <li><a href="#contact" class="menuItems">Contacto</a></li>
 
 
-            <button id="colorMode">
+            <button id="colorMode" class="menuItems">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brightness" width="24"
                     height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                     stroke-linecap="round" stroke-linejoin="round" id="lightMode">
@@ -101,10 +101,10 @@
                 <h3 id="projects">Proyectos</h3>
             </header>
 
-            <article id="slider">
+            <article class="projectSection">
 
                 <button>
-                    <svg xmlns="http://www.w3.org/2000/svg" id="arrow"
+                    <svg xmlns="http://www.w3.org/2000/svg" id="arrowLeft"
                         class="icon icon-tabler icon-tabler-arrow-big-right-lines" width="24" height="24"
                         viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
                         stroke-linejoin="round">
@@ -117,30 +117,35 @@
                     </svg>
                 </button>
 
-                <ul>
-                    <li>
-                        <a href="" class="projectCards">
-                            <img src="/imgs/logo.png" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="projectCards"></a>
-                    </li>
-                    <li>
-                        <a href="" class="projectCards"></a>
-                    </li>
-                    <li>
-                        <a href="" class="projectCards"></a>
-                    </li>
-                    <li>
-                        <a href="" class="projectCards"></a>
-                    </li>
-                    <li>
-                        <a href="" class="projectCards"></a>
-                    </li>
-                </ul>
+                <div id="slider">
+                    <ul>
+                        <li>
+                            <a href="" class="projectCards">
+                                <img src="/imgs/logo.png" alt="">
+                                <h4>Calculadora en Java</h4>
+                                <p>Calculadora con funciones básicas tales como la suma, resta, multiplicación y
+                                    división, totalmente programada de forma nativa sin uso de librerias</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="projectCards"></a>
+                        </li>
+                        <li>
+                            <a href="" class="projectCards"></a>
+                        </li>
+                        <li>
+                            <a href="" class="projectCards"></a>
+                        </li>
+                        <li>
+                            <a href="" class="projectCards"></a>
+                        </li>
+                        <li>
+                            <a href="" class="projectCards"></a>
+                        </li>
+                    </ul>
+                </div>
 
-                <button>
+                <button id="arrowRight">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-right-lines"
                         width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                         stroke-linecap="round" stroke-linejoin="round">
@@ -276,8 +281,9 @@
                         <option value="3">Dudas</option>
                         <option value="4">Más Información</option>
                     </select>
-                    <label>Cuentame:</label>
-                    <textarea name="message" cols="20" rows="1" placeholder="Ingresa tu mensaje aquí"></textarea>
+                    <label for="message">Cuentame:</label>
+                    <textarea name="message" cols="20" rows="1" placeholder="Ingresa tu mensaje aquí"
+                        id="message"></textarea>
 
                     <input id="submit" type="submit" value="Mandame un mensaje">
                 </fieldset>
