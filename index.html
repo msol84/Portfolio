@@ -22,7 +22,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="icon" href="/imgs/logo (2).png" type="image/png">
+    <link rel="icon" href="./imgs/logo (2).png" type="image/png">
 </head>
 
 <body>
@@ -101,62 +101,22 @@
                 <h3 id="projects">Proyectos</h3>
             </header>
 
-            <article class="projectSection">
+            <article>
 
-                <button>
-                    <svg xmlns="http://www.w3.org/2000/svg" id="arrowLeft"
-                        class="icon icon-tabler icon-tabler-arrow-big-right-lines" width="24" height="24"
-                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path
-                            d="M12 9v-3.586a1 1 0 0 1 1.707 -.707l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1 -1.707 -.707v-3.586h-3v-6h3z">
-                        </path>
-                        <path d="M3 9v6"></path>
-                        <path d="M6 9v6"></path>
-                    </svg>
-                </button>
-
-                <div id="slider">
-                    <ul>
-                        <li>
-                            <a href="" class="projectCards">
-                                <img src="/imgs/logo.png" alt="">
-                                <h4>Calculadora en Java</h4>
-                                <p>Calculadora con funciones básicas tales como la suma, resta, multiplicación y
-                                    división, totalmente programada de forma nativa sin uso de librerias</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="projectCards"></a>
-                        </li>
-                        <li>
-                            <a href="" class="projectCards"></a>
-                        </li>
-                        <li>
-                            <a href="" class="projectCards"></a>
-                        </li>
-                        <li>
-                            <a href="" class="projectCards"></a>
-                        </li>
-                        <li>
-                            <a href="" class="projectCards"></a>
-                        </li>
-                    </ul>
-                </div>
-
-                <button id="arrowRight">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-right-lines"
-                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path
-                            d="M12 9v-3.586a1 1 0 0 1 1.707 -.707l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1 -1.707 -.707v-3.586h-3v-6h3z">
-                        </path>
-                        <path d="M3 9v6"></path>
-                        <path d="M6 9v6"></path>
-                    </svg>
-                </button>
+                <ul class="bentoGrid">
+                    <a href="" class="projectCards" role="list">
+                        <h3>Calculadora en Java</h3>
+                    </a>
+                    <a href="" class="projectCards" role="list"></a>
+                    <a href="" class="projectCards" role="list"></a>
+                    <a href="" class="projectCards" role="list"></a>
+                    <a href="" class="projectCards" role="list"></a>
+                    <a href="" class="projectCards" role="list"></a>
+                    <a href="" class="projectCards" role="list"></a>
+                    <a href="" class="projectCards" role="list"></a>
+                    <a href="" class="projectCards" role="list"></a>
+                    <a href="" class="projectCards" role="list"></a>
+                </ul>
 
             </article>
         </section>
@@ -166,7 +126,7 @@
                 <h3 id="habilities">Mis habilidades</h3>
             </header>
             <article>
-                <ul>
+                <ul class="svgList">
                     <li class="svgCard" id="html">
                         HTML
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-html5"
@@ -290,6 +250,19 @@
             </form>
         </section>
 
+        <button id="arrowUp">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-right-lines"
+                width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                    d="M12 9v-3.586a1 1 0 0 1 1.707 -.707l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1 -1.707 -.707v-3.586h-3v-6h3z">
+                </path>
+                <path d="M3 9v6"></path>
+                <path d="M6 9v6"></path>
+            </svg>
+        </button>
     </main>
+    <script src="deviceSelector.js"></script>
     <script src="main.js"></script>
 </body>
