@@ -13,12 +13,10 @@ function cargarCSS() {
         const linkElement = document.createElement("link");
         linkElement.setAttribute("rel", "stylesheet");
         linkElement.setAttribute("type", "text/css");
-        linkElement.setAttribute("href", "desktop.css");
+        linkElement.setAttribute("href", "/desktop.css");
         document.head.appendChild(linkElement);
     }
 }
 
 // Llamar a la función al cargar la página
 window.addEventListener("DOMContentLoaded", cargarCSS);
-
-// También puedes llamar a la función en cualquier otro evento o acción que desees
