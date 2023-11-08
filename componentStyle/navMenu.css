@@ -39,3 +39,14 @@ menu>button:hover {
     color: var(--secondary-color);
 
 }
+
+#darkMode {
+
+    display: none;
+}
+
+#lightMode {
+
+    display: block;
+
+}

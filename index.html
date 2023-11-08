@@ -18,6 +18,7 @@
     <meta property="og:image:alt" content="Una imagen del portada proncipal del portofolio">
 
     <!--Links-->
+    <script src="./JS/deviceSelector.js"></script>
     <link rel="stylesheet" href="./bodyStyles/root.css">
     <link rel="stylesheet" href="./componentStyle/bentoGrid.css">
     <link rel="stylesheet" href="./componentStyle/abilitiesCards.css">
@@ -27,6 +28,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="icon" href="./imgs/logo (2).png" type="image/png">
+
 </head>
 
 <body>
@@ -41,8 +43,8 @@
 
 
             <button id="colorMode" class="menuItems">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brightness" width="24"
-                    height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brightness" id="lightMode"
+                    width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                     stroke-linecap="round" stroke-linejoin="round" id="lightMode">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                     <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
@@ -51,9 +53,9 @@
                     <path d="M12 14.3l7.37 -7.37"></path>
                     <path d="M12 19.6l8.85 -8.85"></path>
                 </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brightness-off" width="24"
-                    height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round" id="darkMode">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brightness-off"
+                    id="darkMode" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                    fill="none" stroke-linecap="round" stroke-linejoin="round" id="darkMode">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                     <path d="M12 3v5m0 4v9"></path>
                     <path d="M5.641 5.631a9 9 0 1 0 12.719 12.738m1.68 -2.318a9 9 0 0 0 -12.074 -12.098"></path>
@@ -110,12 +112,13 @@
                 <ul class="bentoGrid">
                     <button class="projectCards" role="list">
                         <h3>Calculadora para la Interpolación de Lagrange</h3>
-                        <img src="./imgs/Lagrange.png" alt="Calculadora Interpolación de Lagrange">
+                        <img src="./imgs/Lagrange.png" alt="Calculadora Interpolación de Lagrange" loading="lazy">
                         <div>
                             <span>Aplicación Java que recibe un conjunto de puntos y devuelve el polinomio de
                                 Interpolación de esos puntos</span>
                             <div class="cardLinks">
-                                <a href="">
+                                <a href="https://github.com/GasparKral/Java/archive/refs/heads/main.zip"
+                                    target="_blank">
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                         class="icon icon-tabler icon-tabler-code-circle" width="24" height="24"
                                         viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
@@ -126,7 +129,8 @@
                                         <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
                                     </svg>
                                 </a>
-                                <a href="">
+                                <a href="https://github.com/GasparKral/Java/tree/main/FunciónInterpolatoriaDeLagrange"
+                                    target="_blank">
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                         class="icon icon-tabler icon-tabler-eye-code" width="24" height="24"
                                         viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
@@ -299,6 +303,5 @@
             </svg>
         </button>
     </main>
-    <script src="./JS/deviceSelector.js"></script>
     <script src="./JS/main.js"></script>
 </body>

@@ -181,6 +181,13 @@
 
 }
 
+.projectCards.minimize svg {
+
+    height: 20px;
+    width: 20px;
+
+}
+
 .projectCards.minimize h3 {
 
     font-size: 0.9rem;

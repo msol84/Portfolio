@@ -1,9 +1,18 @@
-const colorMode = document.getElementById("colorMode");
+const colorMode = document.getElementById("colorMode")
+const darkModeButton = document.getElementById("darkMode");
+const lightModeButton = document.getElementById("lightMode");
 const menu = document.getElementsByTagName("menu")[0];
 
 colorMode.addEventListener('click', () => {
 
     document.documentElement.classList.toggle('darkMode');
+    if (document.documentElement.classList.contains('darkMode')) {
+        darkModeButton.style.display = "block";
+        lightModeButton.style.display = "none";
+    } else {
+        darkModeButton.style.display = "none";
+        lightModeButton.style.display = "block";
+    }
 
 })
 
