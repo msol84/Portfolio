@@ -1,0 +1,26 @@
+#projects {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 75vw;
+
+}
+
+#projects h2 {
+
+    margin-bottom: 2rem;
+    font-weight: 900;
+    font-size: 2rem;
+
+}
+
+#pr-grid {
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(500px, 1fr));
+    grid-auto-rows: minmax(250px, auto);
+    grid-gap: 20px;
+
+}
