@@ -1,0 +1,22 @@
+{
+  "name": "portfolio_gaspar_kral",
+  "version": "1.0.0",
+  "description": "Portfolio de Gaspar Kral",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GasparKral/Portfolio.git"
+  },
+  "keywords": [
+    "Nuevo"
+  ],
+  "author": "Gaspar Gómez Kral",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GasparKral/Portfolio/issues"
+  },
+  "homepage": "https://github.com/GasparKral/Portfolio#readme"
+}
