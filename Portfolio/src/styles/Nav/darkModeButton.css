@@ -1,0 +1,22 @@
+menu>button {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid white;
+    padding: 0.5rem;
+    border-radius: 8px;
+    margin: 4px 0;
+    background-color: transparent;
+    color: white;
+
+
+}
+
+button>svg {
+
+    height: 1rem;
+    width: 1rem;
+
+}

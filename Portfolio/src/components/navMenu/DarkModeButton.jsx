@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Light, Dark } from "../../assets/DarkModeSVG"
+import '../../styles/Nav/darkModeButton.css'
 export const DarkModeButton = () => {
 
     const [darkMode, setDarkMode] = useState(false)
